@@ -10,7 +10,7 @@ phases:
   post_build:
      commands:
        - echo Entered post build
-  artifacts:
+artifacts:
      files:
        - build/libs/*.jar 
      discard-paths: yes
