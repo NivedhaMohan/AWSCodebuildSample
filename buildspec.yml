@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Entered install phase
+  build:
+     commands:
+       - echo Entered build phase
+       - mvn clean build
+  post build:
+     commands:
+       - echo Entered post build
+  artifacts:
+     files:
+       - build/libs/*.jar 
+  discard-paths: yes
+       
+
