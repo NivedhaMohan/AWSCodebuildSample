@@ -6,7 +6,8 @@ phases:
   build:
      commands:
        - echo Entered build phase
-       - ./gradlew bootJar
+       - chmod +x gradlew
+       - ./gradlew clean build
   post_build:
      commands:
        - echo Entered post build
