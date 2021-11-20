@@ -13,7 +13,8 @@ phases:
        - echo Entered post build
 artifacts:
      files:
-       - build/libs/*.jar 
+       - build/libs/*.jar
+       - echo $CODEBUILD_SRC_DIR
      discard-paths: yes
        
 
