@@ -7,7 +7,7 @@ phases:
      commands:
        - echo Entered build phase
        - mvn clean build
-  post build:
+  post_build:
      commands:
        - echo Entered post build
   artifacts:
