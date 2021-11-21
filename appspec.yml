@@ -12,19 +12,19 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: /home/ec2-user/server/server_clean.sh
+    - location: server_clean.sh
       timeout: 300
       runas: ec2-user
   AfterInstall:
-     - location: /home/ec2-user/server/change_permissions.sh
+     - location: change_permissions.sh
        timeout: 300
        runas: ec2-user
   ApplicationStart:
-     - location: /home/ec2-user/server/server_start.sh
+     - location: server_start.sh
        timeout: 300
        runas: ec2-user
   ValidateService:
-     - location: /home/ec2-user/server/server_stop.sh
+     - location: server_stop.sh
        timeout: 300
        ruas: ec2-user
   
